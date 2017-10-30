@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Launch</title>
+  </head>
+  <body>
+    <script src='lib/fhir-client.js'></script>
+    <script>
+      FHIR.oauth2.authorize({
+        'client_id': 'a25b291d-0c1b-4fd4-9bb9-c96dfed1e68a',
+        'scope':  'launch patient/*.* openid profile'
+      });
+    </script>
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </body>
+</html>
+

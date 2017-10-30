@@ -1,0 +1,51 @@
+h2{margin:0px;}
+p{margin:0px;}
+.disclaimer{color:gray; font-size: 0.7em;}
+#parent{ margin-bottom: 2em; }
+
+.gTable{margin-bottom:20px;}
+.gTable th{padding: 5px; background: #868e96; color:white; text-align: center; vertical-align: middle;}
+.gTable tbody tr{border:1px solid gray;}
+.gTable td{padding:5px;}
+.gTable td.center{text-align: center; vertical-align: middle;}  
+.percTable th{padding: 5px; background: #957bbe; color:white; text-align: center; vertical-align: middle;}
+.percTable tbody tr{border:1px solid gray;}
+.percTable td{padding:5px;}
+.percTable td.center{text-align: center; vertical-align: middle;}  
+.btnIncrement{color:lightgray; font-size: 0.6em;margin-left:10px; margin-top:0.5em;}    
+.btnText{position: relative;float: left;}
+.btnIncrement{position: relative;float: right;}
+.fullWidth{min-width: 100%;max-width: 100%;width: 100%;}
+.oldValues{font-size:0.7em; color:gray;}
+.incomplete{color:red; margin-left:5px;}
+#calculatedScore{  vertical-align: middle; text-align: center; border:1px solid #868e96;}
+#gCalculatedScore{  vertical-align: middle; text-align: center; border:1px solid #868e96;}     
+label[data-state='1'].btn.active{  background: red; } 
+label[data-state='2'].btn.active{  background: red; } 
+
+#noModGen{ text-align: center; padding:10em 0em; background:#957bbe; font-weight: bold; color:white; }
+#noModGen.warning{ background: red; }
+
+.parentTd{ min-width: 50%;max-width: 50%;width: 50%; vertical-align: top; padding: 0px;}
+.infoFromEHR{ min-width: 30%;max-width: 30%;width: 30%; }
+.thLabel{ min-width: 30%;max-width: 30%;width: 30%; }
+
+#footer{ position: fixed; bottom:0px;  border-top:1px solid black; background:white; z-index:10000;}   
+#footer span{padding:5px;}
+#logoImg {  height:1.5em; }
+#logo{ position: relative; float: right; display:none;}
+#gal{ position: relative; float: left; }
+#klein{ position: relative; float: left;  } 
+#bar{ position: relative; float: left;  } 
+#saveSpan{  position: relative; float: right; }
+
+.na {background: rgba(0,0,0,0.7); display:none;}
+
+.explanation{  font-weight: bold; background:lightgray; border-bottom:1px solid black; margin-bottom:5px; background: #80bdff; color:white;}
+.explanation td{padding:1%;}
+.center{text-align: center;}
+
+#creditsToggle{ color:#ffc107; font-size: 0.8em; font-weight: 400;}
+#creditsToggle:hover{ cursor: pointer; }   
+
+.btn:hover{ cursor: pointer; }   
