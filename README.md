@@ -1,4 +1,4 @@
-# peruleout
+# PE Rule Out with FHIR
 
 Uses FHIR to autopopulate a Modified Geneva Rule (to determine low risk PE) and the a PERC rule to rule out pulmomary embolism.
 
