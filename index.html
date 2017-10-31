@@ -35,7 +35,7 @@
       <table class="fullWidth explanation">
         <tr>
           <td class="left">
-            <span style="font-size: 1.4em;">Modified Geneva + PERC Rule</span>
+            <span style="font-size: 1.4em;">Revised Geneva + PERC Rule</span>
             <br>
             <span class="small">Autofilling medical calculator with information from the EHR </span>
             <br>
@@ -46,7 +46,7 @@
           <td class="left">
             <p>Instructions</p>
             <ul>
-              <li>First complete calculator for the Modified Geneva.</li>
+              <li>First complete calculator for the Revised Geneva.</li>
               <li>If low risk by Geneva, complete the PERC rule.</li>              
               <li>If not low risk by Geneva, PERC rule will not display.</li>                            
             </ul>
@@ -59,7 +59,7 @@
           <div id="gTableParent">
             <table class='gTable fullWidth'>
               <thead>
-                <tr><th colspan=2>Modified Geneva</th><td rowspan=2 id="gCalculatedScore">&nbsp;</td></tr>
+                <tr><th colspan=2>Revised Geneva</th><td rowspan=2 id="gCalculatedScore">&nbsp;</td></tr>
                 <tr><th class='thLabel'>Criteria</th><th class='infoFromEHR'>EHR Information</th></tr>
               </thead>
               <tbody>
@@ -179,7 +179,7 @@
     </td> 
 
     <td class='parentTd'>
-          <div id="noModGen"><p> <- Complete the Modified Geneva to view PERC.</p></div>
+          <div id="noModGen"><p> <- Complete the Revised Geneva to view PERC.</p></div>
           <div id="percTableParent" class="na">
             <table class='percTable fullWidth'>
               <thead>
@@ -324,23 +324,55 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Credits & Disclaimer</h5>
+            <h5 class="modal-title">Credits & Disclaimer<img id="logo" src="mi2.png" alt=""></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>
-              <p>PERC Rule by <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Kline+JA%5BAuthor%5D" target="_blank">Jeffrey Kline, MD</a></p>
-              <p>Modified Geneva Rule by <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Le+Gal+G%5BAuthor%5D" target="_blank">Grégoire Le Gal, MD, PhD</a></p> 
-              <p>Code by <a href="https://www.linkedin.com/in/maloykr/" target="_blank">Kevin Maloy, MD</a></p>
-              <p>A project of the <a href="http://mi2.medstarhealth.org/">MedStar Institute for Innovation</a>&nbsp;&nbsp;<img src="mi2.png" alt=""></p>       
-              <p>Help us with this project on <a href="https://github.com/maloykr/pe">github</a></p>         
-              <br>
-              <p>A best effort is made to search through the EHR to find matches for different elements of this score.  However, a negative search does not necessarily imply absence of that element.  Please always check with patient.</p>
-              <br>
-              <p>This app is intended for educational purposes only.  It cannot diagnose medical conditions or provide treatment recommendations.  This information should not be used for the diagnosis or treatment of any health problem or disease.  This information is not intended to replace clinical judgment or guide individual patient care in any manner.  The system's authors, developers and distributors assume no responsibility for any erroneous results due to defects in the system. Access to and use of the ebmcalc system is provided without warranty of merchantability or fitness for any particular purpose or any other warranty, express or implied.</p>
-            </p>
+            <table class="table">
+              <tr>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/15304025" target="_blank">PERC</td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Kline+JA%5BAuthor%5D" target="_blank">Jeffrey Kline, MD</a></td>
+              </tr>
+              <tr>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/16461960" target="_blank">Revised Geneva Score for Pulmonary Embolism</a></td>
+                <td><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Le+Gal+G%5BAuthor%5D" target="_blank">Grégoire Le Gal, MD, PhD</a></td>
+              </tr>
+              <tr>
+                <td>Other projects used</td>
+                <td>
+                  <a href="https://github.com/smart-on-fhir/client-js">fhir-client.js</a>
+                  <a href="https://getbootstrap.com/">bootstrap</a>
+                  <a href="https://jquery.com/">jquery</a>
+                  <a href="https://underscorejs.org">underscore.js</a>
+                  <a href="https://momentjs.com/">moment.js</a>
+                  <a href="https://popper.js.org/">popper.js</a>                                                      
+                </td>
+              </tr>
+              <tr>
+                <td>A project of</td>
+                <td><a href="http://mi2.medstarhealth.org/">The MedStar Institute for Innovation</a></td>                
+              </tr>
+              <tr>
+                <td>Contribute at</td>
+                <td><a href="https://github.com/MI2-Labs/peruleout" target="_blank">MI2's Github</a></td>
+              </tr>
+              <tr>
+                <td>License</td>
+                <td><a href="https://github.com/MI2-Labs/peruleout/License" target="_blank">MIT</a></td>
+              </tr>
+              <tr>
+                <td colspan=2>
+                 A best effort is made to search through the EHR to find matches for different elements of this score.  However, a negative search does not necessarily imply absence of that element.  Please always check with patient, their family, and the medical record. 
+                </td>
+              </tr>
+              <tr>
+                <td colspan=2>
+                  This app is intended for educational purposes only.  It cannot diagnose medical conditions or provide treatment recommendations.  This information should not be used for the diagnosis or treatment of any health problem or disease.  This information is not intended to replace clinical judgment or guide individual patient care in any manner.  The system's authors, developers and distributors assume no responsibility for any erroneous results due to defects in the system. Access to and use of the system is provided without warranty of merchantability or fitness for any particular purpose or any other warranty, express or implied.                  
+                </td>
+              </tr>
+            </table>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -388,7 +420,7 @@ function getFHIR(){
                 .done(function (data) {
                   myApp.patientResource = data
                   dfdGotPt.resolve()
-                  $("#progress").html("Got Patient")
+                  $("#progress").html("Checked Patient")
         }, function(error){ 
 //          alert(JSON.stringify(error))
         })
@@ -405,7 +437,7 @@ function getEncounter(){
                   myApp.encounter = _.find(data, function(val,index){ if(val.id === myApp.smart.tokenResponse.encounter){ return val } })
                   myApp.startPeriod = myApp.encounter.period.start
                   dfdGotEncounter.resolve()          
-                  $("#progress").html("Got Encounters")
+                  $("#progress").html("Checked Encounters")
         }), function(error){ 
         //  alert(JSON.stringify(error)) 
         });
@@ -429,7 +461,7 @@ function requestsThatDontNeedEncounter(){
                     }
                   })
                   dfdGotMeds.resolve()  
-                  $("#progress").html("Got Meds")               
+                  $("#progress").html("Checked Meds")               
         }), function(error){ alert(JSON.stringify(error)) });
 
 
@@ -447,7 +479,7 @@ function requestsThatDontNeedEncounter(){
                     }
                   })
                   dfdGotConditions.resolve()   
-                  $("#progress").html("Got Conditions")       
+                  $("#progress").html("Checked Conditions")       
 
         }), function(error){ alert(JSON.stringify(error)) });
 
@@ -473,7 +505,7 @@ function requestsThatNeedEncounter(){
                 }
               })              
               dfdGotHr.resolve()
-              $("#progress").html("Got Heart Rates")
+              $("#progress").html("Checked Heart Rates")
         }), function(error){ alert(JSON.stringify(error)) });
 //vital signs observed = 8716-3
         $.when(myApp.patient.api.fetchAll({
@@ -491,7 +523,7 @@ function requestsThatNeedEncounter(){
                 }
               })
               dfdGotSp02.resolve()
-              $("#progress").html("Got Sp02")
+              $("#progress").html("Checked Sp02")
         }), function(error){ alert(JSON.stringify(error)) });
 
 }
@@ -854,7 +886,7 @@ function requestsThatNeedEncounter(){
           $("#noModGen").html("Can't PERC, not low risk").addClass("warning")
         }
         else{
-          $("#noModGen").html("<p> <- Complete the Modified Geneva to view PERC.</p>").removeClass("warning")
+          $("#noModGen").html("<p> <- Complete the Revised Geneva to view PERC.</p>").removeClass("warning")
         }
 
         $("#gCalculatedScore").html("<span>Score: "+score+"</span>"+addPhrase+recs)
@@ -869,8 +901,8 @@ function requestsThatNeedEncounter(){
         toInsert = ""
 
 ///mod geneva
-        toInsert += "<!DOCTYPE html><html><head><title>Modified Geneva and PERC</title></head><body>"
-        toInsert += "<table><tbody><tr><th colspan='3'>Modified Geneva</th></tr><tr><th>Question</th><th>EHR Info</th><th>Answer</th></tr>"
+        toInsert += "<!DOCTYPE html><html><head><title>Revised Geneva and PERC</title></head><body>"
+        toInsert += "<table><tbody><tr><th colspan='3'>Revised Geneva</th></tr><tr><th>Question</th><th>EHR Info</th><th>Answer</th></tr>"
         $actives = $(".gTable label.active:visible")
         _.each($actives, function(val,index){
           var chosenOptionText = $(val).find("span.btnText").text()
